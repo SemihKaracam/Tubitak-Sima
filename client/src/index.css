@@ -1,0 +1,73 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@layer components {
+    .sidebarItems a:hover,
+    a.active {
+        @apply bg-greenOpaque;
+    }
+}
+html,body,#root{
+    height: 100%;
+    width: 100%;
+}
+
+.logo{
+    /* padding: 4px; */
+    width: fit-content;
+}
+
+
+/*Students Table*/
+td,th{
+    text-align: left;
+    padding: 8px;
+}
+
+
+.dayCellGreen{
+    background-color: green;
+}
+
+.dayCellRed{
+    background-color: red !important;
+}
+
+label{
+    display: block;
+}
+
+input:focus{
+    outline: none;
+}
+input{
+    padding: 4px 8px;
+    border: 1px solid #919293;
+    border-radius: 4px;
+    width: 100%;
+}
+
+.student-form > div{
+    margin-bottom: 8px;
+}
+
+input[type='radio'] {
+    box-sizing: border-box;
+    appearance: none;
+    background: white;
+    outline: 2px solid #333;
+    border: 3px solid white;
+    width: 10px;
+    height: 10px;
+  }
+  
+  input[type='radio']:checked {
+    background: red;
+  }

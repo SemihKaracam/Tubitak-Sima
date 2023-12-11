@@ -1,0 +1,41 @@
+[
+    {
+        "id":"1",
+        "ogrenciAd":"Semih",
+        "ogrenciSoyad":"Karacam",
+        "fakulte":"Mühendislik Fakültesi",
+        "bolum": "Bilgisayar Mühendisliği",
+        "ders": "Veri Yapıları",
+        "attendance":["11.05.2023","13.07.2023","16.07.2023"]
+    },
+    {
+        "id":"2",
+        "ogrenciAd":"Kerim",
+        "ogrenciSoyad":"Işık",
+        "fakulte":"Mühendislik Fakültesi",
+        "bolum": "Endüstri Mühendisliği",
+        "ders": "Fizik",
+        "attendance":["10.05.2023","17.05.2023","18.05.2023"]
+
+    },
+    {
+        "id":"3",
+        "ogrenciAd":"Ali",
+        "ogrenciSoyad":"Yıldırım",
+        "fakulte":"Mühendislik Fakültesi",
+        "bolum": "Makine Mühendisliği",
+        "ders": "Matematik",
+        "attendance":["07.05.2023","09.05.2023","10.05.2023"]
+
+    },
+    {
+        "id":"4",
+        "ogrenciAd":"Fatih",
+        "ogrenciSoyad":"Kepçe",
+        "fakulte":"Mühendislik Fakültesi",
+        "bolum": "Kimya Mühendisliği",
+        "ders": "Kimya",
+        "attendance":["11.05.2023","12.05.2023","18.05.2023"]
+
+    }
+]
