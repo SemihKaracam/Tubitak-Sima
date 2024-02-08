@@ -38,7 +38,7 @@ const sidebarItemsTeacher= [
     {
         id: 1,
         icon: <AiTwotoneCalendar size={24} />,
-        path: "attendance",
+        path: "editAttendance",
     },
 ]
 
@@ -74,10 +74,10 @@ const Sidebar = () => {
                     ))
                 }
             </div>
-            <button className='flex items-center gap-2 mt-8 pl-3' onClick={handleLogout}>
+            {/* <button className='flex items-center gap-2 mt-8 pl-3' onClick={handleLogout}>
                 <FiLogOut />
                 <span className='text-[12px]'>Logout</span>
-            </button>
+            </button> */}
         </div>
     )
 }

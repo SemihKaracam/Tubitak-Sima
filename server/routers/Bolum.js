@@ -28,7 +28,6 @@ router.get("/find/:id", async (req, res) => {
 })
 
 
-
 //Bolum oluştur
 router.post("/", verifyRole("admin","academician"),async (req, res) => {
     try{
@@ -60,8 +59,6 @@ router.delete("/:id", verifyRole("admin"),async(req,res)=>{
         console.log(err)
     }
 })
-
-
 
 //Tüm Collection'ların adetini al, dashboard'da göstermek için kullanıcam
 router.get("/all",verifyRole("admin"),async(req,res)=>{

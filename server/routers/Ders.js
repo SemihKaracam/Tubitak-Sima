@@ -261,11 +261,11 @@ router.post("/updateAttendance", async (req, res) => {
         const ogrenci = await Ogrenci.findOne({
             okulNo: req.body.number
         })
-        const ogrenciId = ogrenci._id.toString()
-        const currentDate = new Date().toLocaleTimeString();
+        // const ogrenciId = ogrenci._id.toString()
+        // const currentDate = new Date().toLocaleTimeString();
 
-        console.log(currentDate)
-        console.log(ogrenciId)
+        // console.log(currentDate)
+        console.log(ogrenci)
 
 
         // const ders = await Ders.find({
@@ -288,7 +288,7 @@ router.post("/updateAttendance", async (req, res) => {
         // }
         // res.json(ders)
       
-        // res.json(ogrenci)
+        return res.json(ogrenci)
     } catch (err) {
         console.log(err)
     }

@@ -16,18 +16,28 @@ const HomeStudentPage = () => {
         getStudent()
     }, [])
 
-    useEffect(() => {
+    useEffect(()=>{
         const getLessons = async () => {
             const res = await axios.get("http://localhost:5000/lessons/kayitli/" + student?._id);
             setLessons(res.data)
+            console.log(res.data)
         }
         getLessons()
-    }, [student?._id])
+
+    },[student])
+
+    // useEffect(() => {
+    //     const getLessons = async () => {
+    //         const res = await axios.get("http://localhost:5000/lessons/kayitli/" + student?._id);
+    //         setLessons(res.data)
+    //     }
+    //     getLessons()
+    // }, [student?._id])
     console.log(selectedLesson)
     return (
         <div>
             <div>
-                <h3 className='text-[24px] mb-6'><b>{student?.ad} {student?.soyad}</b> adlı kişinin <b>{selectedLesson}</b> dersindeki yoklama bilgisi</h3>
+                <h3 className='text-[24px] mb-6'><b>{student?.ad} {student?.soyad}</b> adlı kişinin <b>{selectedLesson!='DEFAULT' && selectedLesson}</b> dersindeki yoklama bilgisi</h3>
             </div>
             <div className='mb-4'>
                 <span className='mr-3 font-semibold text-[18px]'>Ders</span>

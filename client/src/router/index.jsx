@@ -18,6 +18,7 @@ import HomeStudentPage from "../pages/HomeStudentPage"
 import HomeAcademicianPage from "../pages/HomeTeacherPage"
 import NotFoundPage from "../pages/NotFoundPage"
 import AttendancePage from "../pages/AttendancePage"
+import EditAttendancePage from "../pages/EditAttendancePage"
 
 export const router = createBrowserRouter([
     {
@@ -49,7 +50,7 @@ export const router = createBrowserRouter([
                 path: "/home/academician",
                 element:
                     <RequireAuth allowedRoles={["academician"]}>
-                        <HomeAcademicianPage />
+                        <AttendancePage />
                     </RequireAuth>
             },
             {
@@ -88,16 +89,16 @@ export const router = createBrowserRouter([
                     </RequireAuth>
             },
             {
-                path: "/attendance",
+                path: "/editAttendance",
                 element:
                     <RequireAuth allowedRoles={["academician"]}>
-                        <AttendancePage />
+                        <EditAttendancePage />
                     </RequireAuth>
             },
             {
                 path: "/teachers/create",
                 element:
-                    <RequireAuth>
+                    <RequireAuth>   
                         <CreateTeacherPage />
                     </RequireAuth>
             },
